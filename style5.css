@@ -1,0 +1,92 @@
+/* Mengimpor font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&display=swap');
+
+/* Menggunakan font Great Vibes untuk elemen dengan kelas "great-vibes" */
+.great-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Menggunakan font Parisienne untuk elemen dengan kelas "parisienne" */
+.parisienne {
+  font-family: 'Parisienne', cursive;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9eaea;
+    margin: auto;
+    padding: auto;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #ff4d4d;
+  }
+  
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .heart-photo {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff6666;
+  }
+  
+  #greetingText {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  @keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-beat {
+  animation: heartbeat 0.5s ease-in-out;
+}
+@keyframes scrollRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.scroll-right-animation {
+  animation: scrollRight 2s ease-in-out;
+}
+button a {
+  text-decoration: none;
+  color: #f9eaea;
+}
